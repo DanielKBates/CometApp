@@ -1,0 +1,238 @@
+/* .messageContentParent {
+  height: 6%; */
+  /* display: table;
+  position: absolute; */
+  /* width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+ } 
+ 
+ .messageContentDiv {
+  width: 100%;
+
+  margin-top: 1%;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.24), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #b1a296;
+  background-color: #3895d3;
+ }
+  */
+ /* left COL of message content */
+ /* .messageDateTime {
+  margin-bottom: 0;
+  margin-top: -30px;
+ }
+ .circle {
+    margin-top: 18%;
+ }
+ 
+ .messageDateTimeDiv {
+  margin-top: 0;
+  padding-right: auto;
+ }
+ .input-field {
+  margin-top: 0;
+ }
+ .select-dropdown {
+  text-align: center;
+ }
+
+ .messageContentRow {
+  padding-top: 1%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+ }
+ 
+ .messageTextDiv {
+  background: #272727;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  color: white;
+  height: 50px;
+ }
+
+ .select-wrapper input.select-dropdown {
+   text-align:center;
+   margin: 0 0 0 0;
+ }
+ 
+ .messageText {
+  width: 75%;
+  bottom:5;
+  text-align: center;
+  overflow: auto;
+  font-family: “Open Sans”, sans-serif;
+  /* height: 40%; */
+
+ /* }
+ 
+ .translateButtonDiv {
+  margin-right: 16%;
+ 
+ }
+ 
+ .translateBtn {
+  width: 19%;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 71%;
+  color: #272727;
+  background-color: #b1a296;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #272727;
+  border-width: 2px;
+  font-family: “Quicksand”, sans-serif;
+  margin-left: 98%;
+ }
+ .langDrop {
+  width: 16%;
+  margin-left: 82%;
+  margin-top: -12%;
+ }
+ 
+ .messageSender {
+  margin-right: 90%;
+  margin-top: 0%;
+ 
+  font-size: 130%;
+ }
+ @media only screen and (max-width: 600px) {
+  .messageText {
+    font-size: 10px;
+  }
+  .messageDateTime {
+    font-size: 10px;
+  }
+ } */ *
+
+
+ .messageContentParent {
+  min-height: 6%;
+  height: 6%;
+  /* display: table;
+  position: absolute; */
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+/* left COL of message content */
+.messageDateTime {
+  margin-bottom: 0;
+  margin-top: -30px;
+}
+.circle {
+  margin-top: 18%;
+}
+
+.messageDateTimeDiv {
+  margin-top: 0;
+  padding-right: auto;
+}
+.input-field {
+  margin-top: 0;
+}
+.select-wrapper input.select-dropdown {
+  text-align: center;
+  margin: 0 0 0 0;
+}
+.messageContentDiv {
+  width: 100%;
+  margin-top: 1%;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.24), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #b1a296;
+  background-color: #3895d3;
+}
+
+.messageContentRow {
+  padding-top: 1%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.messageTextDiv {
+  background: #272727;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  color: white;
+  height: 50px;
+}
+
+.messageText {
+  width: 75%;
+  margin-top: -2%;
+  margin-left: 4%;
+  text-align: center;
+  overflow: auto;
+  font-family: "Open Sans", sans-serif;
+  background-color: #272727;
+  color: white;
+  border-radius: 7px;
+  padding: 2px 0px 2px 0px;
+  
+}
+
+.translateButtonDiv {
+  margin-right: 16%;
+}
+
+.translateBtn {
+  width: 19%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  font-size: 71%;
+  color: #272727;
+  background-color: #b1a296;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #272727;
+  border-width: 2px;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 98%;
+
+}
+.langDrop {
+  width: 16%;
+  margin-left: 82%;
+  margin-top: -10%;
+}
+
+.messageSender {
+  margin-right: 90%;
+  margin-top: -1%;
+  font-size: 130%;
+}
+@media only screen and (max-width: 600px) {
+  .messageText {
+    font-size: 10px;
+  }
+  .messageDateTime {
+    font-size: 10px;
+  }
+}

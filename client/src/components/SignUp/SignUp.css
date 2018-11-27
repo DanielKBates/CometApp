@@ -1,0 +1,55 @@
+html{
+    height:100%;
+    min-height: 100%;
+}
+
+body{
+    height:100%;
+    min-height: 100%;
+    background: #272727;
+}
+
+.signupContainer{
+    height: 100%;
+    min-height: 100%;
+}
+
+.signupRow{
+    height: 100%;
+    min-height: 100%;
+}
+
+.signupHeader{
+    margin-bottom: 5%;
+    color: #3895d3;
+}
+
+.signupMessage{
+    margin-bottom: 5%;
+    color: white;
+}
+
+.signupForm{
+    height: 100%;
+    min-height: 100%;
+}
+
+.middleColumn{
+    height: 100%;
+    min-height: 100%;
+}
+
+.usernameSignup{
+    margin-bottom: 10%;
+}
+
+.passwordSignup{
+    margin-top: 10%;
+}
+
+.loginButton{
+    height: 5%;
+    border-radius: 5px;
+    margin-top: 3%;
+    background:#3895d3;
+}
