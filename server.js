@@ -1,15 +1,19 @@
 require("dotenv").config();
 
 const express = require("express");
-const logger = require('morgan');
 const bodyParser = require('body-parser');
 const path = require("path");
 const jwt = require('jsonwebtoken');
 
 const db = require("./models");
 const passport = require("./utils/passport");
-
-const app = express();
+var app = require('express')();
+var server = require('http').Server(app);
+var io = module.exports.io = require('socket.io')(server);
+const logger = require("morgan");
+// const SocketManager = require("./SocketManager")
+// const Data = require("./data");
+// const router = express.Router();
 app.set('port', process.env.PORT || 3001)
 
 // Serve up static assets (usually on heroku)
@@ -52,9 +56,21 @@ app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
+io.on("connection", (socket) => {
+  console.log(`Socket Connected: ${socket.id}`)
+  socket.on('SEND_MESSAGE', (data) => {
+    console.log(data);
+    io.emit("RECEIVE_MESSAGE", data)
+  })
+
+
+
+
+});
+
 db.sequelize.sync({ force: false })
   .then(() => {
-    app.listen(app.get('port'), () => {
+    server.listen(app.get('port'), () => {
       console.log(`🌎 ==> Server now on port ${app.get('port')}!`);
     });
   })

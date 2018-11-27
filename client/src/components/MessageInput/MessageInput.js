@@ -1,5 +1,8 @@
 import React from "react";
 import "./MessageInput.css";
+import io from "socket.io-client";
+var serverURI = process.env.REACT_APP_SERVER;
+var socket = io(serverURI);
 // import moment from "moment"
 
 
@@ -11,7 +14,8 @@ class MessageInput extends React.Component {
 
     this.state = {
       message: "",
-      messageSent: false
+      messageSent: false,
+      messages: []
     };
   }
 
@@ -20,6 +24,13 @@ class MessageInput extends React.Component {
     this.setState({
       [name]: value
     });
+    socket.on("RECEIVE_MESSAGE", (data) => {
+      console.log(data);
+      this.setState({ messages: [...this.state.messages, data] });
+      console.log(this.state.messages)
+
+    })
+
   };
 
   sendMethod = event => {
@@ -27,12 +38,15 @@ class MessageInput extends React.Component {
 
     const newMessage = {
       timestamp: Date.now(),
-      from: "Jacob",
+      from: "User",
       text: this.state.message
     };
-
     this.props.onSend(newMessage)
     this.setState({ message: "" })
+
+    socket.emit("SEND_MESSAGE", this.state.message);
+
+
 
   };
 
