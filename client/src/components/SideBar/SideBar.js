@@ -118,7 +118,7 @@ class SideBar extends React.Component {
 
         {/* Group Message Modal */}
         <Modal
-          header="Start A Group Message with:"
+          header="Start A Group Named:"
           className="modal"
           trigger={
             <Button className="groupMessageBtn btn waves-effect waves-light grey darken-2">

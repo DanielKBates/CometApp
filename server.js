@@ -12,6 +12,18 @@ const passport = require("./utils/passport");
 const app = express();
 app.set('port', process.env.PORT || 3001)
 
+if (process.env.JAWSDB_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "root",
+    database: "comet_db"
+
+  })
+}
+
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
